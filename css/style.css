@@ -1,0 +1,832 @@
+html {
+    font-size: 62.5%
+}
+
+body,
+h2,
+h3,
+h4,
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    color: #3f434a
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 15px)
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: normal
+}
+
+@media screen and (min-width: 767px) {
+    h2 {
+        font-size: 2.6rem
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal
+}
+
+@media screen and (min-width: 767px) {
+    h3 {
+        font-size: 2.2rem
+    }
+}
+
+p {
+    font-size: 1.5rem
+}
+
+.pages_controller.home_action img {
+    width: 100%
+}
+
+.pages_controller.home_action section.header {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 660px;
+    text-align: center;
+    position: relative;
+    padding-top: 48px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.header {
+        background-image: url(../images/bg.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat
+    }
+}
+
+.pages_controller.home_action section.header h2,
+.pages_controller.home_action section.header h3,
+.pages_controller.home_action section.header p {
+    color: #fff
+}
+
+.pages_controller.home_action section.header .tagline {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 16px 6vmin 24px;
+    animation: fadeIn 2s ease 0.2s 1 normal
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.header .tagline {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 24px
+    }
+}
+
+.pages_controller.home_action section.header .logo {
+    margin: 0 auto 16px;
+    width: 131px;
+    height: 116px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+    animation: fadeIn 2s ease 0.2s 1 normal
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.header .logo {
+        margin-top: 15vh
+    }
+}
+
+.pages_controller.home_action section.header .btn_download {
+    animation: fadeIn 2s ease 0.2s 1 normal
+}
+
+.pages_controller.home_action section.header .content {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 260px;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    animation: fadeIn 2s ease 0.2s 1 normal
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.header .content {
+        padding-top: 24px
+    }
+}
+
+.pages_controller.home_action section.header .content .footnote {
+    margin: 24px auto
+}
+
+.pages_controller.home_action section.header .content .footnote p {
+    margin-bottom: 4px
+}
+
+.pages_controller.home_action section.service h2,
+.pages_controller.home_action section.service h3,
+.pages_controller.home_action section.service p {
+    color: #fff
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.service h2 {
+        font-size: 2.4rem
+    }
+}
+
+.pages_controller.home_action section.service p {
+    text-align: justify
+}
+
+.pages_controller.home_action section.service .container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.pages_controller.home_action section.service .container .item {
+    padding: 8vmin 6vmin;
+    flex-grow: 1;
+    flex-basis: 100vw;
+    min-height: 540px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.service .container .item {
+        flex-basis: 1vw;
+        height: 80vh
+    }
+}
+
+.pages_controller.home_action section.service .container .item1 {
+    background: #cdbeca;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center bottom
+}
+
+.pages_controller.home_action section.service .container .item2 {
+    background: #b2bac4;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center bottom
+}
+
+.pages_controller.home_action section.service .container .item3 {
+    background: #e6d5b1;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center bottom
+}
+
+.pages_controller.home_action section.plan {
+    text-align: center
+}
+
+.pages_controller.home_action section.plan .container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.pages_controller.home_action section.plan .container .item {
+    flex-grow: 1;
+    flex-basis: 375px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.plan .container .wrap {
+        width: 400px;
+        margin: 0 auto
+    }
+}
+
+.pages_controller.home_action section.plan .container .plan {
+    padding: 16vmin 6vmin 20vmin;
+    background: #f5f5f5;
+    height: 510spx
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.plan .container .plan {
+        padding: 64px 24px
+    }
+}
+
+.pages_controller.home_action section.plan .container .plan .wrap {
+    max-width: 400px;
+    margin: 0 auto
+}
+
+.pages_controller.home_action section.plan .container .plan .content {
+    display: flex;
+    margin-bottom: 16px
+}
+
+.pages_controller.home_action section.plan .container .plan .content .plan_single,
+.pages_controller.home_action section.plan .container .plan .content .plan_bouquet {
+    background: #fff;
+    border-radius: 12px;
+    height: 252px;
+    flex-grow: 1;
+    flex-basis: 156px
+}
+
+.pages_controller.home_action section.plan .container .plan .content .plan_single {
+    margin-right: 16px;
+    background-image: url(../images/bg.jpg);
+    background-size: 110px 188px;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.pages_controller.home_action section.plan .container .plan .content .plan_bouquet {
+    background-image: url(../images/bg.jpg);
+    background-size: 110px 188px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative
+}
+
+.pages_controller.home_action section.plan .container .plan .content .plan_bouquet .badge {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background-image: url(../images/muryo.png);
+    background-size: cover;
+    background-position: center
+}
+
+.pages_controller.home_action section.plan .container .plan .footnote p {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0
+}
+
+.pages_controller.home_action section.plan .container .frequency {
+    padding: 16vmin 0 20vmin
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.plan .container .frequency {
+        margin: auto;
+        padding: 64px 24px
+    }
+}
+
+.pages_controller.home_action section.plan .container .frequency h2 {
+    font-weight: normal;
+    font-size: 2rem
+}
+
+.pages_controller.home_action section.plan .container .frequency .img {
+    margin-top: 24px;
+    height: 156px;
+    background-image: url(../images/board.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.plan .container .frequency .img {
+        background-size: contain
+    }
+}
+
+.pages_controller.home_action section.download {
+    background: #3f434a;
+    text-align: center;
+    padding: 12vmin 6vmin 16vmin
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.download {
+        display: none
+    }
+}
+
+.pages_controller.home_action section.download h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 16px
+}
+
+@media screen and (max-width: 320px) {
+    .pages_controller.home_action section.download h2 {
+        font-size: 1.8rem
+    }
+}
+
+.pages_controller.home_action section.flower {
+    background: #ead5dc;
+    padding: 16vmin 6vmin 20vmin
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.flower {
+        padding: 0 6vmin
+    }
+}
+
+.pages_controller.home_action section.flower h2,
+.pages_controller.home_action section.flower h3 {
+    text-align: center
+}
+
+.pages_controller.home_action section.flower h3 {
+    margin-top: 24px
+}
+
+.pages_controller.home_action section.flower p {
+    text-align: justify
+}
+
+.pages_controller.home_action section.flower .container {
+    height: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.flower .container {
+        flex-flow: column wrap
+    }
+}
+
+.pages_controller.home_action section.flower .container .item {
+    flex-grow: 1
+}
+
+.pages_controller.home_action section.flower .container .title {
+    max-height: fit-content;
+    margin-bottom: 24px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.flower .container .title {
+        order: 2;
+        width: 50%;
+        margin-top: 140px
+    }
+}
+
+.pages_controller.home_action section.flower .container .img {
+    background-image: url(../images/bg.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 730px
+}
+
+@media screen and (max-width: 499px) {
+    .pages_controller.home_action section.flower .container .img {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.flower .container .img {
+        order: 1;
+        width: 50%
+    }
+}
+
+.pages_controller.home_action section.flower .container .body {
+    max-width: 400px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.flower .container .body {
+        order: 3;
+        margin: 0 auto
+    }
+}
+
+.pages_controller.home_action section.vase {
+    padding: 16vmin 0 16vmin;
+    background: #e7e3df
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase {
+        padding: 10vmin 0 0
+    }
+}
+
+.pages_controller.home_action section.vase h2 {
+    text-align: center
+}
+
+.pages_controller.home_action section.vase p {
+    text-align: justify
+}
+
+.pages_controller.home_action section.vase .container {
+    height: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase .container {
+        height: 730px;
+        flex-flow: column wrap
+    }
+}
+
+.pages_controller.home_action section.vase .container .item {
+    flex-grow: 1
+}
+
+.pages_controller.home_action section.vase .container .title {
+    padding: 0 6vmin
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase .container .title {
+        max-height: fit-content;
+        order: 1;
+        width: 50%;
+        max-height: fit-content
+    }
+}
+
+.pages_controller.home_action section.vase .container .img {
+    height: 730px;
+    width: 100vmin;
+    margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+    background-size: 112%;
+    background-position: center bottom;
+    background-repeat: no-repeat
+}
+
+@media screen and (min-width: 460px) {
+    .pages_controller.home_action section.vase .container .img {
+        background-size: contain
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase .container .img {
+        min-height: 0;
+        order: 3;
+        width: 50%;
+        background-size: cover
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .pages_controller.home_action section.vase .container .img {
+        background-size: cover
+    }
+}
+
+.pages_controller.home_action section.vase .container .body {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2vmin 6vmin
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase .container .body {
+        order: 2;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 32px;
+        padding: 0
+    }
+}
+
+.pages_controller.home_action section.vase .discount {
+    display: flex;
+    margin-top: 16px
+}
+
+.pages_controller.home_action section.vase .discount p {
+    background: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 auto
+}
+
+.pages_controller.home_action section.vase .vase_variation {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px auto
+}
+
+.pages_controller.home_action section.vase .vase_variation .item {
+    flex-grow: 1;
+    height: 116px;
+    max-width: 98px;
+    position: relative
+}
+
+.pages_controller.home_action section.vase .vase_variation .item p {
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    margin: auto
+}
+
+.pages_controller.home_action section.vase .vase_variation .bell {
+    background-image: url(https://placehold.jp/196x230.png);
+    background-size: cover
+}
+
+.pages_controller.home_action section.vase .vase_variation .moon {
+    background-image: url(https://placehold.jp/196x230.png);
+    background-size: cover
+}
+
+.pages_controller.home_action section.vase .vase_variation .candle {
+    background-image: url(https://placehold.jp/196x230.png);
+    background-size: cover
+}
+
+.pages_controller.home_action section.vase .price {
+    display: flex;
+    margin-bottom: 16px
+}
+
+.pages_controller.home_action section.vase .price .title {
+    order: 1;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 16px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.vase .price .title {
+        width: 100px
+    }
+}
+
+.pages_controller.home_action section.vase .price .content {
+    order: 2
+}
+
+.pages_controller.home_action section.vase .price .content .discount_price {
+    font-size: 1.8rem
+}
+
+@media screen and (max-width: 320px) {
+    .pages_controller.home_action section.vase .price .content .discount_price {
+        font-size: 1.7rem
+    }
+}
+
+.pages_controller.home_action section.vase .price .content .normal_price {
+    font-size: 1.3rem
+}
+
+.pages_controller.home_action section.vase .footnote {
+    font-size: 1.3rem
+}
+
+.pages_controller.home_action section.service2 {
+    padding: 16vmin 4vmin 20vmin;
+    text-align: center
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.service2 {
+        padding: 12vmin 4vmin 16vmin
+    }
+}
+
+.pages_controller.home_action section.service2 .container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.pages_controller.home_action section.service2 .container p {
+    font-size: 1.5rem
+}
+
+.pages_controller.home_action section.service2 .container .item {
+    flex-grow: 1;
+    flex-basis: 223px;
+    padding-top: 80px;
+    margin-top: 24px
+}
+
+.pages_controller.home_action section.service2 .container .item1 {
+    width: 80px;
+    background-image: url(../images/biginner.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px
+}
+
+.pages_controller.home_action section.service2 .container .item2 {
+    width: 80px;
+    background-image: url(../images/apli.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px
+}
+
+.pages_controller.home_action section.service2 .container .item3 {
+    width: 80px;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px
+}
+
+.pages_controller.home_action section.download2 {
+    height: 541px;
+    background: #efdfc5;
+    padding: 16vmin 4vmin 0;
+    text-align: center
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.download2 {
+        height: 420px;
+        padding: 0 4vmin
+    }
+}
+
+.pages_controller.home_action section.download2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.download2 .container {
+        flex-direction: row
+    }
+}
+
+.pages_controller.home_action section.download2 .container .logo {
+    padding-top: 76px;
+    height: 145px;
+    background-image: url(https://placehold.jp/236x152.png);
+    background-repeat: no-repeat;
+    background-size: 118px;
+    background-position: center top;
+    z-index: 100
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.download2 .container .logo {
+        order: 2;
+        margin-left: -250px;
+        margin-top: 60px
+    }
+}
+
+.pages_controller.home_action section.download2 .container .logo h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 24px
+}
+
+.pages_controller.home_action section.download2 .container .img {
+    margin: 21vmin auto 0;
+    min-height: 278px;
+    height: 50vmin;
+    width: 70vmin;
+    background-image: url(../images/download.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.download2 .container .img {
+        margin: 0;
+        order: 1;
+        width: 80%;
+        height: 422px;
+        background-size: contain
+    }
+}
+
+.pages_controller.home_action .footnote p {
+    font-size: 1.3rem
+}
+
+.pages_controller.home_action .btn_download {
+    width: 202px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url(../images/app.png);
+    background-size: cover
+}
+
+.pages_controller.home_action section.footer {
+    padding: 8vmin 8vmin 12vmin;
+    background: #3f434a;
+    position: relative;
+    min-height: 164px
+}
+
+.pages_controller.home_action section.footer a {
+    color: #fff
+}
+
+.pages_controller.home_action section.footer .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.footer .container {
+        flex-direction: row;
+        width: 90%
+    }
+}
+
+.pages_controller.home_action section.footer .item {
+    flex-grow: 1;
+    margin-bottom: 16px
+}
+
+@media screen and (min-width: 767px) {
+    .pages_controller.home_action section.footer .item {
+        flex-basis: auto
+    }
+}
+
+.pages_controller.home_action section.footer .instagram {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/insta.png);
+    background-size: cover;
+    position: absolute;
+    top: 48px;
+    right: 24px
+}
+
+.pages_controller.home_action section.footer .copyright {
+    text-align: center;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+    left: 0;
+    margin: auto
+}
+
+.pages_controller.home_action section.footer .copyright p {
+    color: #fff;
+    font-size: 1.3rem;
+    opacity: 0.4
+}
+
+.pages_controller.home_action .white {
+    color: #fff
+}
+
+.pages_controller.home_action .navy {
+    color: #3f434a
+}
+
+.pages_controller.home_action .mt16 {
+    margin-top: 16px
+}
+
+.pages_controller.home_action section.images {
+    margin: 0 auto;
+    max-width: 375px
+}
+
+.pages_controller.home_action section.images img {
+    width: 100%;
+    display: block
+}
